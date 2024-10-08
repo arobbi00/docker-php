@@ -12,7 +12,7 @@
         $contact->setEmail($email);
         $contactDAO = new ContactDAO();
         $contactDAO->addContact($contact);
-        echo 'Transaction complete. Renavigate to localhost:80 via the addressbar.';
+        echo 'Transaction complete. Renavigate to localhost via the addressbar.';
         exit;
     }
 
