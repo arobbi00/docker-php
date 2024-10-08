@@ -1,8 +1,8 @@
  
-CREATE TABLE `todos` (
+CREATE TABLE `comments` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `fname` varchar(32) NOT NULL,
-  `fname` varchar(32) NOT NULL,
-  `fname` varchar(32) NOT NULL,
+  `fName` varchar(32) NOT NULL,
+  `lName` varchar(32) NOT NULL,
+  `comment` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 );

@@ -1,38 +1,37 @@
- 
 <?php
     class Contact{
-        private $fName;
-        private $lName;
-        private $comment;
+        private $contactID;
+        private $username;
+        private $email;
 
         public function load($row){
-            $this->setFName($row['fName']);
-            $this->setLName($row['lName']);
-            $this->setComment($row["comment"]);
+            $this->setContactID($row['fName']);
+            $this->setUsername($row['lName']);
+            $this->setEmail($row["comment"]);
         }
 
-        public function setFName($fname){
-            $this->fname=$fname;
+        public function setContactID($contactID){
+            $this->contactID=$contactID;
         }
 
-        public function getFName(){
-            return $this->fname;
+        public function getContactID(){
+            return $this->contactID;
         }
 
-        public function setLname($username){
+        public function setUsername($username){
             $this->username=$username;
         }
 
-        public function getLname(){
+        public function getUsername(){
             return $this->username;
         }
 
-        public function setComment($comment){
-            $this->comment=$comment;
+        public function setEmail($email){
+            $this->email=$email;
         }
 
-        public function getComment(){
-            return $this->comment;
+        public function getEmail(){
+            return $this->email;
         }
     }
 ?>

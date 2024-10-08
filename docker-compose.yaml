@@ -15,17 +15,17 @@ services:
             - ./app:/app
 
     db:
-        image: mysql:8.0
+        image: arobbi/sql
         volumes:
             - mysqldata:/var/lib/mysql
         ports:
             - "3306:3306"
-        restart: unless-stopped
+        #restart: unless-stopped
         environment:
             MYSQL_ROOT_PASSWORD: secret
             MYSQL_USER: user
             MYSQL_PASSWORD: secret
-            MYSQL_DATABASE: docker-php
+            MYSQL_DATABASE: comments
 
 volumes:
     mysqldata:
