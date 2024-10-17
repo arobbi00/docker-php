@@ -1,3 +1,3 @@
- FROM php:8.1-fpm-alpine
+ FROM arobbi/php
 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
