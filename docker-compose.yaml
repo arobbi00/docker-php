@@ -15,7 +15,7 @@ services:
             - ./app:/app
 
     db:
-        image: arobbi/sql
+        image: mariadb:latest
         volumes:
             - mysqldata:/var/lib/mysql
         ports:
